@@ -19,7 +19,7 @@ tl$save("index.html")
 
 # Modify JS Path
 js <- paste(readLines("index.html", warn = F), collapse = "\n")
-js <- gsub("/Users/pacha/bowie-timeline/timeline/js/storyjs-embed.js", 
-          "timeline/js/storyjs-embed.js", 
-          js)
+js <- gsub("/Library/Frameworks/R.framework/Versions/3.2/Resources/library/rCharts/libraries/timeline/js/storyjs-embed.js", 
+           "timeline/js/storyjs-embed.js", 
+           js)
 writeLines(js, con = "index.html")
