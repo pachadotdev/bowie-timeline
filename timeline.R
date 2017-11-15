@@ -24,5 +24,6 @@ js = paste(read_lines("index.html"), collapse = "\n") %>%
   gsub("1/1/", "19", .) %>% 
   gsub(" 00:00", "", .) %>% 
   gsub("190", "200", .) %>% 
-  gsub("191", "201", .)
+  gsub("191", "201", .) %>% 
+  gsub("Timeline JS Example", "David Bowie Discography", .)
 write_lines(js, "index.html")
